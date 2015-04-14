@@ -40,13 +40,24 @@ $(document).on('ready', function() {
 		// Separate the testString into an array of "cells"
 		var splitString = orderInfo.split(",")
 
+		// Test if index 24 is the customer message
+
 
 		// Finds the index in splitString that begins the line item order section
 		var findOrder = function(arr) {
 			for (var i = 0; i < arr.length; i++) {
 				if (arr[i][0] == '"' && 
 					arr[i][1] == 'P' &&
-					arr[i][2] == 'r') {
+					arr[i][2] == 'r' &&
+					arr[i][3] == 'o' &&
+					arr[i][4] == 'd' &&
+					arr[i][5] == 'u' &&
+					arr[i][6] == 'c' &&
+					arr[i][7] == 't' &&
+					arr[i][8] == ' ' &&
+					arr[i][9] == 'I' &&
+					arr[i][10] == 'D' &&
+					arr[i][11] == ':') {
 					return i;
 				}
 			}
@@ -98,7 +109,7 @@ $(document).on('ready', function() {
 
 	}
 
-	// perOrder(testString)
+	// perOrder('424,222,"Roberta Aragon",bellagoni@gmail.com,505-401-1280,18/12/2014,Shipped,196.75,196.75,0.00,7.00,7.00,"Priority Flat Rate (3 items)",0.0000,0.0000,203.75,203.75,"Credit Card",3,0,18/12/2014,USD,1.0000000000,,,Roberta,Aragon,,"20707 Anza Ave # 214",,Torrance,CA,90503,"United States",505-401-1280,bellagoni@gmail.com,Roberta,Aragon,,"20707 Anza Ave # 214",,Torrance,CA,90503,"United States",505-401-1280,bellagoni@gmail.com,"Product ID: 149, Product Qty: 1, Product SKU: Medusa Jellyfish Crop-XS, Product Name: Medusa Jellyfish Crop, Product Weight: 0.1000, Product Variation Details: Size: XS (0-2), Product Unit Price: 48.75, Product Total Price: 48.75|Product ID: 159, Product Qty: 1, Product SKU: Pantanal legging-Small, Product Name: Pantanal Legging, Product Weight: 0.3000, Product Variation Details: Size: S (4), Product Unit Price: 72.00, Product Total Price: 72.00|Product ID: 169, Product Qty: 1, Product SKU: Holi Fest Legging-XS, Product Name: Holi Fest Legging, Product Weight: 0.3000, Product Variation Details: Size: XS (0-2), Product Unit Price: 76.00, Product Total Price: 76.00"')
 
 
 
