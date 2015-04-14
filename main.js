@@ -9,7 +9,6 @@ $(document).on('ready', function() {
 	// Separate the testString into an array of "cells"
 	var splitString = testString.split(",")
 
-	console.log(splitString)
 
 	// Finds the index in splitString that begins the line item order section
 	var findOrder = function(arr) {
@@ -37,21 +36,23 @@ $(document).on('ready', function() {
 
 	var repeat = findRepeat(splitString);
 
-	console.log("REPEAT: " + findRepeat(splitString));
-
-
-
 
 	// Returns an array of line item orders split at "|"
 	var combineOrder = function(arr) {
 		var orders = []
-		for (var i = findOrder(splitString); i < splitString.length; i++) {
-			orders.push(splitString[i])
+		for (var i = orderStart; i < splitString.length; i++) {
+			if (i == findOrder(splitString)) {
+				orders.push(splitString[i].substr(1))
+			} else if (i == splitString.length - 1) {
+				orders.push(splitString[i].substr(0, splitString[i].length - 1))
+			} else {
+				orders.push(splitString[i])
+			}
 		}
 		return orders.join(",").split("|");
 	}
 
-	console.log("combineOrder: " + combineOrder(splitString))
+	// console.log("combineOrder: " + combineOrder(splitString))
 
 	var orderArray = combineOrder(splitString)
 
