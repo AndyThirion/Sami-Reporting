@@ -109,8 +109,5 @@ $(document).on('ready', function() {
 
 	}
 
-	// perOrder('424,222,"Roberta Aragon",bellagoni@gmail.com,505-401-1280,18/12/2014,Shipped,196.75,196.75,0.00,7.00,7.00,"Priority Flat Rate (3 items)",0.0000,0.0000,203.75,203.75,"Credit Card",3,0,18/12/2014,USD,1.0000000000,,,Roberta,Aragon,,"20707 Anza Ave # 214",,Torrance,CA,90503,"United States",505-401-1280,bellagoni@gmail.com,Roberta,Aragon,,"20707 Anza Ave # 214",,Torrance,CA,90503,"United States",505-401-1280,bellagoni@gmail.com,"Product ID: 149, Product Qty: 1, Product SKU: Medusa Jellyfish Crop-XS, Product Name: Medusa Jellyfish Crop, Product Weight: 0.1000, Product Variation Details: Size: XS (0-2), Product Unit Price: 48.75, Product Total Price: 48.75|Product ID: 159, Product Qty: 1, Product SKU: Pantanal legging-Small, Product Name: Pantanal Legging, Product Weight: 0.3000, Product Variation Details: Size: S (4), Product Unit Price: 72.00, Product Total Price: 72.00|Product ID: 169, Product Qty: 1, Product SKU: Holi Fest Legging-XS, Product Name: Holi Fest Legging, Product Weight: 0.3000, Product Variation Details: Size: XS (0-2), Product Unit Price: 76.00, Product Total Price: 76.00"')
-
-
 
 });
